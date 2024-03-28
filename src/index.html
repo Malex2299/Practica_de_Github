@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEGUNI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div  class="header-content">
+        <img src="https://seguni-files.s3.amazonaws.com/img/login/logo.svg" alt="Logo Empresa" width="200">
+        <h1>Encuesta de Satisfacción del Cliente</h1>   
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="question">
+                <h2>¡Tu opinión es muy valiosa para nosotros!</h2>
+                <p>Por favor, tómate unos minutos para completar nuestra encuesta de satisfacción,<br> donde valorarás nuestro servicio así como el servicio de nuestro portal en línea.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="question">
+                <h2>Encuesta</h2>
+                <form action="#" method="post">
+                    <div class="question-container">
+                        <label>1) ¿Cuál es tu nombre completo?</label>
+                        <input type="text" name="pregunta1" placeholder="Nombre Completo">
+                    </div>
+
+                    <div class="question-container">
+                        <label>2) ¿Qué tan satisfecho estás con los servicios de nuestra empresa de seguros?</label>
+                        <select name="pregunta2">
+                            <option value="opcion1">Muy Satisfecho</option>
+                            <option value="opcion2">Satisfecho</option>
+                            <option value="opcion3">Insatisfecho</option>
+                        </select>
+                    </div>
+
+                    <div class="question-container">
+                        <label>3) En una escala del 1 al 5, ¿qué tan satisfecho estás con la rapidez de respuesta de nuestro servicio de atención al cliente?</label>
+                        <input type="range" name="pregunta3" min="1" max="5">
+                    </div>
+
+                    <div class="question-container">
+                        <label>4) ¿Cómo calificarías la facilidad de uso de nuestro portal en línea?</label>
+                        <div>
+                            <input type="radio" name="pregunta4" value="opcion1"> Muy Fácil de Usar
+                            <input type="radio" name="pregunta4" value="opcion2"> Fácil de usar
+                            <input type="radio" name="pregunta4" value="opcion3"> Difícil de Usar
+                            <input type="radio" name="pregunta4" value="opcion4"> Muy dificil de Usar
+                        </div>
+                    </div>
+
+                    <div class="question-container">
+                        <label>5) ¿Tienes algún comentario o sugerencia adicional que quisieras compartir con nosotros?</label>
+                        <textarea name="pregunta5" rows="4" cols="30" placeholder="Ingresa tu comentario"></textarea>
+                    </div>
+
+                    <br>
+                    <button type="submit">Enviar Encuesta</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Encuesta Finalizada, Gracias por su valiosa opinión</p>
+    </footer>
+</body>
+</html>
